@@ -62,6 +62,14 @@ Before any task, run `python3 files/scripts/package.py skill <name>`, then open 
 
 "Is a source down?", "why no data": run `screener.py sources` and report each source in one line.
 
+## Starting a conversation
+
+Run `screener.py context`. If `profile_filled` is false and the user has no concrete task (a greeting, "what can you do"), follow `screener-onboarding`: the short intro AND its three numbered questions in the same reply. If the user brings a task, do it first.
+
+## Where alerts arrive
+
+Alerts arrive in this chat. Other places (Telegram and so on) only if the user has connected them in ASCN Channels and asks for it; never promise a channel you have not checked.
+
 ## Reply format
 1. The result in one line (alerts found / quiet / the coin's verdict).
 2. One block per alert or flag, numbers first.

@@ -12,4 +12,4 @@ ASCN (ascn.ai) marketplace agent built from the owner's spec "Агент №1: �
 
 Script `workspace/files/scripts/screener.py`: `context`, `run`, `coin`, `config`, `alerts`, `followup`, `sources`, `report-path`. Standard library only. Sources: CoinGecko/CoinPaprika, Binance/Bybit/OKX spot and futures, Hyperliquid, DefiLlama exchange reserves, GDELT, Blockscout. Optional secret COINGECKO_API_KEY.
 
-Install: `marketplace/install-or-update-from-github.md`; start prompt `marketplace/startup-task.md`; soul `marketplace/soul-intro.md`. After changes: `python3 tools/build_manifest.py && python3 tools/build_manifest.py --check`.
+Install with `marketplace/install-or-update-public.md` (the repo is public: the workspace downloads the bundle over HTTPS and checks every file's sha256; no GitHub integration needed) or `marketplace/install-or-update-from-github.md`; start prompt `marketplace/startup-task.md`; soul `marketplace/soul-intro.md`. After changes: `python3 tools/build_manifest.py && python3 tools/build_manifest.py --check`.
