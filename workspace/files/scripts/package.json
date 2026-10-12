@@ -1,0 +1,75 @@
+{
+ "agent": "screener",
+ "name": "Kai",
+ "repo": "iarbor04/ascn-volume-screener-agent",
+ "version": "2026-10-12-142667ba7146",
+ "data_root": "files/screener",
+ "defaults": "defaults",
+ "skills": [
+  "alerts-digest",
+  "coin-check",
+  "scoring-setup",
+  "screen-run",
+  "screener-onboarding"
+ ],
+ "addons": [
+  {
+   "file": "AGENTS.screener-addon.md",
+   "into": "AGENTS.md",
+   "marker": "<!-- screener-addon:v1 -->"
+  },
+  {
+   "file": "AGENTS.screener-rules.md",
+   "into": "AGENTS.md",
+   "marker": "<!-- screener-rules:v1 -->",
+   "position": "top",
+   "end": "<!-- /screener-rules -->"
+  }
+ ],
+ "legacy": {},
+ "refresh": [],
+ "platform": [
+  "AGENTS.md",
+  "AUTOMATIONS.md",
+  "USER.md",
+  "MEMORY_POLICY.md",
+  "rules/",
+  "files/tool-output/"
+ ],
+ "publish_exclude": [
+  "files/screener/",
+  "files/tool-output/",
+  "files/scripts/__pycache__/"
+ ],
+ "start": {
+  "profile": "profile/screener-profile.md",
+  "greeting": "Hi! I'm Kai, your crypto screener for unusual activity 👋\nI help you notice a coin where something unusual is happening while it is happening, not after the move.\nWhat I do:\n📈 Check the top coins and compare today's trading with their usual\n🎯 Look at futures bets: new positions, crowded sides\n🏦 See money moving to and from exchanges\n📰 Watch news and what people are searching for\n🐋 Spot large wallet transfers\n🔔 Write only when several signs line up on one coin, with a short explanation\nAlerts are about unusual activity, not buy or sell advice.\nThree quick questions:\n1. How often should I check: every hour, every 4 hours or twice a day?\n2. How strict: 3 of 5 signs (recommended), 4 of 5 for fewer alerts, or 2 of 5 for more?\n3. Optional: a free CoinGecko key makes my coin list more reliable; add it in Settings → Secrets as COINGECKO_API_KEY\nAnswer, or just say «go» and I'll run the first check right now! 🚀",
+  "failed": "Setup isn't finished yet. Write me any message and I'll finish it.",
+  "skill": "screener-onboarding",
+  "greeting_by_language": {
+   "ru": "Привет! Я Кай, скринер необычной активности по крипте 👋\nПомогаю заметить монету, где происходит что-то необычное, пока это происходит, а не после движения.\nЧто я делаю:\n📈 Проверяю топ монет и сравниваю сегодняшние торги с обычными\n🎯 Смотрю ставки на фьючерсах: новые позиции, перекос в одну сторону\n🏦 Вижу, как монеты заходят на биржи и уходят с них\n📰 Слежу за новостями и тем, что люди ищут\n🐋 Замечаю крупные переводы между кошельками\n🔔 Пишу, только когда на одной монете совпадает несколько признаков, с коротким объяснением\nАлерт — это про необычную активность, а не совет покупать или продавать.\nТри коротких вопроса:\n1. Как часто проверять: раз в час, раз в 4 часа или два раза в день?\n2. Насколько строго: 3 признака из 5 (рекомендую), 4 из 5 — меньше алертов, или 2 из 5 — больше?\n3. По желанию: бесплатный ключ CoinGecko сделает список монет надёжнее; добавь его в Настройки → Секреты как COINGECKO_API_KEY\nОтветь или просто напиши «поехали», и я сразу сделаю первую проверку! 🚀"
+  }
+ },
+ "files": {
+  "AGENTS.screener-addon.md": "3095e702ec664023e17310bcaec38b4862399e61ecfbe2b80e7e29b9f32133e3",
+  "AGENTS.screener-rules.md": "ce84067b6193be729d1eb620ed79a0bfe3affc232823bae30aaab67481f53f3f",
+  "IDENTITY.md": "faa9c306f143f540ea415b4c9795cd8c33d72cb473386df1a991c8f387d4c1c9",
+  "SOUL.md": "e3863606fb39569183e6d7d5a24f0aa42e9199043f505482b4c417f8f9950193",
+  "THIRD_PARTY_NOTICES.md": "6c9ac381089b65cadf7f212970b292ffddbb9f5647bed90d0bf8a3140e0b7548",
+  "defaults/cache/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "defaults/config.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  "defaults/profile/screener-profile.md": "e69899481d1452f87808a612e22c20fb912ec1f87c894a95b421f7ac20ab537c",
+  "defaults/reports/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "defaults/runs/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "files/scripts/package.py": "5b84643d5a4cdc756a5dac6ac9691bc6edcd5307bd2a7bb51b501819b9407021",
+  "files/scripts/screener.py": "36d9b44c2c2f3f570dcb10021805d276bf2bdc3891e5cb2f155d990a16343946",
+  "knowledge/data-sources.md": "3a8a52e6782d45c5f20bb06f1ce62aed5ceaf4067d94d40d770081bcbe7f6dd6",
+  "knowledge/reading-signals.md": "0abde936a59ca54ce2ac08e18d04ce2e75d22d6a85db532b7f82009bca12d3e5",
+  "knowledge/scoring.md": "ef959f3e7ad09a2db431525f5744d27d7eb071fc57332242afe3531d7e372fdf",
+  "skills/alerts-digest/SKILL.md": "c1f356f741adfe3b9831f1185b84a0fbbaf69a54ee3b1bd288125f92f72b0c08",
+  "skills/coin-check/SKILL.md": "4ded1676afc916665cdb941002970222f43aa0d82e3fa351af3686e59efa4d4f",
+  "skills/scoring-setup/SKILL.md": "1f86f2dbe8d3091203f299753743a346ea5474d7ac9ae40f29eed8d1a76cb969",
+  "skills/screen-run/SKILL.md": "f034a81f2605dc65210f0f1e6e6014e12e030de98f78530b078df6fd0a1ea71e",
+  "skills/screener-onboarding/SKILL.md": "3543f46a7661a7589c7fe0865fc2f085b2230ff5ba3c4855360c273c9ceef883"
+ }
+}
