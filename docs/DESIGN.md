@@ -12,4 +12,4 @@ Replacements (research in docs/research.md, all checked live 2026-10-12):
 - Cooldown 12 h per coin unless the score grows; quiet scheduled runs send nothing (saves credits).
 - Flow flag needs both a % move and an unusual z-score: with "either", 26 of 79 coins fired on the first live run (DefiLlama wallet reshuffles).
 - Live runs 2026-10-12: first 79 coins, 181 s, 1 alert (PYTH: volume 3.5×, OI +20%, outflow −2.6% z −3.7, trending #10); after the fixes 75 coins, 154 s, flow fired on 5 coins instead of 26, volume missing for 5 coins instead of 21, same single alert. GDELT answered 429 from the build machine after many test calls: the flag works without it.
-- Name Kai is a placeholder.
+- No personal name (owner, 2026-10-12): the agent is called by its role, «скринер».

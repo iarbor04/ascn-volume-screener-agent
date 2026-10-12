@@ -1,4 +1,4 @@
-# ascn-volume-screener-agent — Kai, crypto anomaly screener
+# ascn-volume-screener-agent — crypto anomaly screener
 
 ASCN (ascn.ai) marketplace agent built from the owner's spec "Агент №1: скринер аномальных объёмов". Scheduled screen of the top coins; five flags from free sources; alert when several fire; the LLM explains each alert.
 
