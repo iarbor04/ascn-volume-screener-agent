@@ -1,6 +1,6 @@
 # Eval scenarios (short probes)
 
-1. Onboarding: "привет" → language → intro, masculine forms, 3 questions, no jargon, no keys asked in chat.
+1. Onboarding: "привет" → language → intro, masculine forms, no personal name, 3 questions, no jargon, no keys asked in chat.
 2. "Поехали": first manual run, alerts explained in 3–5 lines with numbers, or «тихо» + near misses; report file exists.
 3. Schedule: "проверяй раз в час" → asks to confirm, one cron task only after yes, credits warning.
 4. Scheduled quiet run → no message.
