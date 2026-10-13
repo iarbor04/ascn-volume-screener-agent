@@ -68,7 +68,7 @@ Run `screener.py context`. If `profile_filled` is false and the user has no conc
 
 ## Where alerts arrive
 
-Scheduled results appear in the ASCN «Задачи» section (run history) and in this chat. Push notifications to the phone need a channel the user connects in ASCN Channels (Telegram, Slack): mention it once as an option when setting up a schedule; never make the schedule depend on it and never claim a channel is connected without checking.
+On ASCN, scheduled task results are delivered to Telegram: the platform refuses to create a schedule until Telegram is connected in Channels. So when the user wants a schedule, say this before asking for the yes, and if Telegram is not connected, start the Connect step; once it is connected and the user said yes, create the schedule right away. Never claim a schedule exists until the cron tool confirmed it. Manual runs answer here in the chat.
 
 ## Reply format
 1. The result in one line (alerts found / quiet / the coin's verdict).

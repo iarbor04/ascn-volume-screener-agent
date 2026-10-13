@@ -2,7 +2,7 @@
  "agent": "screener",
  "name": "Volume Screener",
  "repo": "iarbor04/ascn-volume-screener-agent",
- "version": "2026-10-13-988567fd7f05",
+ "version": "2026-10-13-ba9ef1583af3",
  "data_root": "files/screener",
  "defaults": "defaults",
  "skills": [
@@ -51,8 +51,8 @@
   }
  },
  "files": {
-  "AGENTS.screener-addon.md": "64ffd891888201177533101ecdea02754c61c6949d68b2ab228b1871df5dc597",
-  "AGENTS.screener-rules.md": "f17e5ec2a707d869c083bb5ab4658f57d37ee1a7749cacc134db1b898412f373",
+  "AGENTS.screener-addon.md": "51d4d71c47842593d8d5ebe10a4bd450fa650a272725eb5cb0b34bf6b01d35f6",
+  "AGENTS.screener-rules.md": "139615dda4e9e82924658440be23e6f002c39167924c96725ac47f2f79d8b7bf",
   "IDENTITY.md": "d820219779ee1245ab26c2b2060395ae4966cf75f360e2ce0c94e954ba344a40",
   "SOUL.md": "e3863606fb39569183e6d7d5a24f0aa42e9199043f505482b4c417f8f9950193",
   "THIRD_PARTY_NOTICES.md": "6c9ac381089b65cadf7f212970b292ffddbb9f5647bed90d0bf8a3140e0b7548",
