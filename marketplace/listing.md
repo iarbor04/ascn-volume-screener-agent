@@ -2,24 +2,24 @@
 
 ## Поля формы
 
-- **name_ru:** Скринер аномальных объёмов — ИИ-скринер криптовалют
-- **name_en:** Volume Anomaly Screener — AI crypto screener
-- **slug:** ai-crypto-volume-screener
+- **name_ru:** Скринер криптовалют с ИИ: аномальные объёмы и алерты
+- **name_en:** AI Crypto Screener: Unusual Volume & Alerts
+- **slug:** ai-crypto-screener
 - **cat_ru / cat_en:** Крипто, аналитика / Crypto, Analytics
 - **integrations:** CoinGecko, Binance, Bybit, OKX, Hyperliquid, DefiLlama, Blockscout (открытые данные)
-- **related:** Аналитик Polymarket
+- **related:** Торговый ИИ-помощник для Bybit, BingX, Bitget и MEXC, Аналитика Polymarket
 - **short_ru:** ИИ-скринер криптовалют: проверяет топ монет по пяти признакам необычной активности и пишет только тогда, когда несколько признаков совпали на одной монете. С цифрами и объяснением.
 - **short_en:** An AI crypto screener: checks the top coins against five signs of unusual activity and writes only when several of them line up on one coin, with numbers and an explanation.
-- **seo_title_ru:** ИИ-скринер крипты: аномальные объёмы, фьючерсы, потоки
-- **seo_title_en:** AI Crypto Screener: Volume Spikes, Futures, Exchange Flows
-- **seo_desc_ru:** Скринер необычной активности по топ-100 монетам: всплеск объёма, фьючерсы, приток и отток с бирж, тренды, крупные переводы. Алерт только при совпадении нескольких признаков.
-- **seo_desc_en:** Unusual-activity screener for the top 100 coins: volume spikes, futures, exchange inflows and outflows, trends and large transfers. Alerts only when several signs match.
+- **seo_title_ru:** Скринер криптовалют с ИИ: аномальные объёмы
+- **seo_title_en:** AI Crypto Screener: Unusual Volume & Alerts
+- **seo_desc_ru:** Скринер криптовалют с ИИ по топ-100 монет: всплеск объёма, фандинг, открытый интерес, приток на биржи. Алерт в Telegram при совпадении нескольких признаков.
+- **seo_desc_en:** AI crypto screener for the top 100 coins: volume spikes, funding, open interest, exchange flows and trends. Telegram alerts only when several signs match.
 
 ## Страница агента (RU)
 
 ### Заголовок
 
-**Сообщение в Telegram, когда на одной монете совпало сразу несколько признаков необычной активности**
+**Скринер криптовалют с ИИ: сообщение в Telegram, когда на одной монете совпало сразу несколько признаков необычной активности**
 
 Скринер проверяет топ-100 монет по капитализации (без стейблкоинов и обёрнутых токенов, это 75–80 монет) по пяти признакам и пишет только тогда, когда на одной монете совпало несколько сразу. Одиночный всплеск — это шум, на него скринер не пишет.
 
@@ -77,6 +77,8 @@
 
 **Это сигналы на покупку?** Нет. Скринер показывает, где происходит что-то необычное. Цена после алерта может пойти в любую сторону. В недельной сводке видно, куда она пошла после каждого алерта.
 
+**Это сканер пампов?** Нет. Скринер не ищет «что улетит». Он показывает монеты, где объём, фьючерсы и потоки денег ведут себя необычно, и цена после этого может пойти в любую сторону.
+
 **Почему не каждые 5 минут?** Полная проверка занимает одну–две минуты. Признаки складываются за часы, поэтому чаще раза в час смысла нет.
 
 **Чем это отличается от бесплатных дашбордов?** Дашборд показывает каждый показатель отдельно, и смотреть нужно самому. Скринер сводит пять признаков по каждой монете, пишет только при совпадении и сам присылает алерт в Telegram.
@@ -87,7 +89,7 @@
 
 ### Headline
 
-**A Telegram alert when several signs of unusual activity line up on one coin**
+**AI crypto screener: a Telegram alert when several signs of unusual activity line up on one coin**
 
 The screener checks the large coins against five signs and writes only when several line up on one coin. A single spike is noise, so the screener stays quiet on it.
 
