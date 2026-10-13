@@ -17,7 +17,7 @@ Output: `files/screener/profile/screener-profile.md` filled in. In chat: intro, 
 ### 2. Intro in plain words
 First line: what the user gains: they hear about a coin where something unusual is happening while it is happening, not after. Then: you check the top coins (large ones, no stablecoins), compare today's trading with the usual, look at futures, money moving to and from exchanges, news and trending, large wallet transfers, and write only when several of these light up at once, with a short explanation. One line: alerts are about unusual activity, not buy or sell advice.
 
-### 3. Questions (numbered, all skippable)
+### 3. Questions (numbered, all skippable; always in the same reply as the intro, never a separate message)
 1. How often to check: every hour, every 4 hours (recommended), twice a day? Each check spends a little of your credits.
 2. How strict: write only when 3 of 5 signs match (recommended), stricter (4 of 5) or more alerts (2 of 5)?
 3. Optional: a free CoinGecko key makes the coin list more reliable. If you have one, add it in Settings → Secrets as COINGECKO_API_KEY (never paste it in the chat).

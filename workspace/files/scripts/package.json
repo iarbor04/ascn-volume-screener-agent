@@ -2,7 +2,7 @@
  "agent": "screener",
  "name": "Volume Screener",
  "repo": "iarbor04/ascn-volume-screener-agent",
- "version": "2026-10-13-cab8d1db7df0",
+ "version": "2026-10-13-d07d295d6811",
  "data_root": "files/screener",
  "defaults": "defaults",
  "skills": [
@@ -52,7 +52,7 @@
  },
  "files": {
   "AGENTS.screener-addon.md": "b1576f50ee3723c7d59479f8ee37557829e6ad7eb316d046224825284543fdc8",
-  "AGENTS.screener-rules.md": "c2719a51590a23977e410cbf1265095feddd831153709b324fc953561fabfbf1",
+  "AGENTS.screener-rules.md": "eacd3f8cf8055fddb65492decb67d22ba5c739272cf343e40a292e3ddd47563c",
   "IDENTITY.md": "d820219779ee1245ab26c2b2060395ae4966cf75f360e2ce0c94e954ba344a40",
   "SOUL.md": "e3863606fb39569183e6d7d5a24f0aa42e9199043f505482b4c417f8f9950193",
   "THIRD_PARTY_NOTICES.md": "6c9ac381089b65cadf7f212970b292ffddbb9f5647bed90d0bf8a3140e0b7548",
@@ -62,7 +62,7 @@
   "defaults/reports/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "defaults/runs/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "files/scripts/package.py": "5b84643d5a4cdc756a5dac6ac9691bc6edcd5307bd2a7bb51b501819b9407021",
-  "files/scripts/screener.py": "36d9b44c2c2f3f570dcb10021805d276bf2bdc3891e5cb2f155d990a16343946",
+  "files/scripts/screener.py": "21caa76f6fbd685290a03f09698c75befbebd2b3353c074f16744e0a50835bcf",
   "knowledge/data-sources.md": "3a8a52e6782d45c5f20bb06f1ce62aed5ceaf4067d94d40d770081bcbe7f6dd6",
   "knowledge/reading-signals.md": "0abde936a59ca54ce2ac08e18d04ce2e75d22d6a85db532b7f82009bca12d3e5",
   "knowledge/scoring.md": "ef959f3e7ad09a2db431525f5744d27d7eb071fc57332242afe3531d7e372fdf",
@@ -70,6 +70,6 @@
   "skills/coin-check/SKILL.md": "4ded1676afc916665cdb941002970222f43aa0d82e3fa351af3686e59efa4d4f",
   "skills/scoring-setup/SKILL.md": "1f86f2dbe8d3091203f299753743a346ea5474d7ac9ae40f29eed8d1a76cb969",
   "skills/screen-run/SKILL.md": "f034a81f2605dc65210f0f1e6e6014e12e030de98f78530b078df6fd0a1ea71e",
-  "skills/screener-onboarding/SKILL.md": "3543f46a7661a7589c7fe0865fc2f085b2230ff5ba3c4855360c273c9ceef883"
+  "skills/screener-onboarding/SKILL.md": "3337d3e6dcb3b5b77db4769922c9cee8a5990961e61bcc2026531ffb597c8880"
  }
 }

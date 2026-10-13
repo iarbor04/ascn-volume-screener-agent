@@ -30,6 +30,8 @@ import math
 import os
 import re
 import statistics
+import threading
+from concurrent.futures import ThreadPoolExecutor
 import sys
 import time
 import urllib.error
@@ -362,8 +364,9 @@ def cex_series(c):
     def load():
         agg, used = {}, []
         cutoff = time.time() - 36 * 86400
-        for slug in c["cex_slugs"]:
-            r = http(f"https://api.llama.fi/protocol/{slug}", timeout=90)
+        with ThreadPoolExecutor(4) as ex:
+            got = list(ex.map(lambda sl: (sl, http(f"https://api.llama.fi/protocol/{sl}", timeout=120)), c["cex_slugs"]))
+        for slug, r in got:
             if not r or not r.get("tokens"):
                 continue
             used.append(slug)
@@ -414,19 +417,30 @@ def trending():
 
 
 LAST_GDELT = [0.0]
+GDELT_LOCK = threading.Lock()
+GDELT_DOWN = [False]
 
 
 def news_ratio(name, sym):
-    wait = 5.5 - (time.time() - LAST_GDELT[0])
-    if wait > 0:
-        time.sleep(wait)
-    LAST_GDELT[0] = time.time()
+    """GDELT allows one request per 5 s and often refuses cloud servers: after one refusal it is skipped for the run."""
+    with GDELT_LOCK:
+        if GDELT_DOWN[0]:
+            return None
+        wait = 5.5 - (time.time() - LAST_GDELT[0])
+        if wait > 0:
+            time.sleep(wait)
+        LAST_GDELT[0] = time.time()
+        return _news(name, sym)
+
+
+def _news(name, sym):
     q = f'"{name}" ({sym} OR crypto OR token)' if len(sym) <= 3 or sym.isalpha() and len(name) > 3 else f'"{name}"'
     r = http("https://api.gdeltproject.org/api/v2/doc/doc",
-             {"query": q, "mode": "timelinevolraw", "format": "json", "timespan": "7d"}, tries=2)
+             {"query": q, "mode": "timelinevolraw", "format": "json", "timespan": "7d"}, tries=1)
     try:
         pts = r["timeline"][0]["data"]
     except Exception:
+        GDELT_DOWN[0] = True
         return None
     vals = [p.get("value", 0) for p in pts]
     if len(vals) < 24:
@@ -596,10 +610,8 @@ def cmd_run(a):
     if not coins:
         out({"ok": False, "error": "could not load the coin list", "errors": STATS["errors"]}, 1)
     ctx = context_data(c, not a.no_slow)
-    rows = []
-    for x in coins:
-        rows.append(analyse(c, x, ctx, not a.no_slow))
-        time.sleep(0.05)
+    with ThreadPoolExecutor(6) as ex:
+        rows = list(ex.map(lambda x: analyse(c, x, ctx, not a.no_slow), coins))
     hist = [json.loads(l) for l in ALERTS.read_text().splitlines()] if ALERTS.exists() else []
     cutoff = (now() - timedelta(hours=c["cooldown_hours"])).isoformat()
     alerts, repeats = [], []
