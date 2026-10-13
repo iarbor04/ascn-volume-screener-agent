@@ -2,7 +2,7 @@
  "agent": "screener",
  "name": "Volume Screener",
  "repo": "iarbor04/ascn-volume-screener-agent",
- "version": "2026-10-13-d07d295d6811",
+ "version": "2026-10-13-7906276635bb",
  "data_root": "files/screener",
  "defaults": "defaults",
  "skills": [
@@ -67,7 +67,7 @@
   "knowledge/reading-signals.md": "0abde936a59ca54ce2ac08e18d04ce2e75d22d6a85db532b7f82009bca12d3e5",
   "knowledge/scoring.md": "ef959f3e7ad09a2db431525f5744d27d7eb071fc57332242afe3531d7e372fdf",
   "skills/alerts-digest/SKILL.md": "c1f356f741adfe3b9831f1185b84a0fbbaf69a54ee3b1bd288125f92f72b0c08",
-  "skills/coin-check/SKILL.md": "4ded1676afc916665cdb941002970222f43aa0d82e3fa351af3686e59efa4d4f",
+  "skills/coin-check/SKILL.md": "4a07a2318918b6d48f3bf0758928b06fe6d436b796899385d96793d9db08fbfb",
   "skills/scoring-setup/SKILL.md": "1f86f2dbe8d3091203f299753743a346ea5474d7ac9ae40f29eed8d1a76cb969",
   "skills/screen-run/SKILL.md": "f034a81f2605dc65210f0f1e6e6014e12e030de98f78530b078df6fd0a1ea71e",
   "skills/screener-onboarding/SKILL.md": "3337d3e6dcb3b5b77db4769922c9cee8a5990961e61bcc2026531ffb597c8880"

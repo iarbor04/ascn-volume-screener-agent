@@ -13,7 +13,7 @@ Output: `files/screener/reports/<date>-coin-<SYMBOL>.md`. In chat: the verdict i
 1. `python3 files/scripts/screener.py coin <SYMBOL>` (1–3 minutes the first time in a day).
 2. Verdict: «X из 5 признаков, балл S: <passes / not enough for an alert>».
 3. One line per flag with its numbers, "no data" with the reason where missing.
-4. If several flags fired or the user asks why: one web search for news on the coin in the last 48 hours; cite the source and date, or say nothing clear was found.
+4. If several flags fired or the user asks why: one web search for news on the coin in the last 48 hours. Every reason you give carries its source and date in the same line, e.g. «(The Block, 12.10)»; a reason without a source is left out. If nothing clear was found, say so.
 5. Explanation as in screen-run step 3. Save the report; deliver via artifact.
 
 ## Rules
