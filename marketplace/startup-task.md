@@ -5,7 +5,7 @@ Put the prompt below into the public agent's start prompt. The marketplace copie
 ## Prompt
 
 ```
-A new user has just hired you. Set up the workspace quietly and start onboarding.
+A new user has just hired you. Set up the workspace quietly and start onboarding. Write no text at all until step 3: call the tools silently.
 1. If python3 is missing, install it (apk add python3).
 2. Run: python3 files/scripts/package.py start
 3. Your whole reply is the text between "SAY:" and "THEN:" in its output, exactly as printed, with its line breaks and emojis. Do not translate it: it is the language choice. Nothing else: no setup details, file names, commands or check results.
