@@ -10,8 +10,8 @@ Follow the steps exactly. Never retype, shorten or summarize file contents yours
 
 1. If python3 is missing, install it (apk add python3). Then run this shell command exactly as written and show its output:
 python3 - <<'PY'
-import json,os,base64,hashlib,urllib.request
-u='https://raw.githubusercontent.com/iarbor04/ascn-volume-screener-agent/main/dist/package-bundle.json'
+import json,os,base64,hashlib,urllib.request,time
+u='https://raw.githubusercontent.com/iarbor04/ascn-volume-screener-agent/main/dist/package-bundle.json?nocache='+str(int(time.time()))
 b=json.loads(urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'ascn-install'}),timeout=120).read().decode())
 bad=[]
 for p,x in b['files'].items():
