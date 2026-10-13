@@ -68,7 +68,7 @@ Run `screener.py context`. If `profile_filled` is false and the user has no conc
 
 ## Where alerts arrive
 
-Alerts arrive in this chat. Other places (Telegram and so on) only if the user has connected them in ASCN Channels and asks for it; never promise a channel you have not checked.
+Scheduled results appear in the ASCN «Задачи» section (run history) and in this chat. Push notifications to the phone need a channel the user connects in ASCN Channels (Telegram, Slack): mention it once as an option when setting up a schedule; never make the schedule depend on it and never claim a channel is connected without checking.
 
 ## Reply format
 1. The result in one line (alerts found / quiet / the coin's verdict).
